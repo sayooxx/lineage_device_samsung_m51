@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Fingerprint Gestures
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/keylayout/uinput-sec-fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-sec-fp.kl
+
 # Inherit Common Device Tree
 $(call inherit-product, device/samsung/sm6150-common/sm6150.mk)
 
