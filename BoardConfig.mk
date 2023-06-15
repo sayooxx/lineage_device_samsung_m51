@@ -16,6 +16,8 @@
 
 include device/samsung/sm6150-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 DEVICE_PATH := device/samsung/m51
 
 # Assert
