@@ -40,5 +40,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_m51
 BOARD_HEADER_VERSION := 2
 TARGET_KERNEL_CONFIG := m51_defconfig
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Get non-open-source specific aspects
 include vendor/samsung/m51/BoardConfigVendor.mk
