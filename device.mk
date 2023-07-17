@@ -47,6 +47,43 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     init.m51.rc \
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/default_sensors.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_2.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_2.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_4.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_power_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3a6x_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3x3x_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_tcs3407_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_tcs3407_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sdmmagpie_vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_vcnl36811_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_hw_revision.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_hw_revision.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a6x_0.json \
+    $(DEVICE_PATH)/rootdir/vendor/etc/sensors/config/vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/cnl36811_0.json \
+
 # Seccomp Policy
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
